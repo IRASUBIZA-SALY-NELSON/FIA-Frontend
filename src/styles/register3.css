@@ -1,0 +1,24 @@
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  @media (max-width: 640px) {
+    .container {
+      padding: 1rem;
+    }
+    .form-container {
+      padding: 1.5rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+    .otp-inputs input {
+      width: 2.5rem;
+      height: 2.5rem;
+      font-size: 1rem;
+    }
+  }

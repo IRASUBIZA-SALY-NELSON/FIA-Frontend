@@ -1,0 +1,250 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #1E90FF, #60A5FA);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 32rem;
+    width: 100%;
+    padding: 1.5rem;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.header {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 1rem 1rem 0 0;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1E40AF;
+}
+
+.header .user-info {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.header .user-info span {
+    font-size: 0.9rem;
+    color: #2D3748;
+    font-weight: 500;
+}
+
+.header .user-info img {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 2px solid #E2E8F0;
+    transition: transform 0.3s;
+}
+
+.header .user-info img:hover {
+    transform: scale(1.1);
+}
+
+.content {
+    background: white;
+    border-radius: 0 0 1rem 1rem;
+    padding: 2rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    animation: slideUp 0.8s ease;
+}
+
+h2 {
+    color: #1E40AF;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    background: #F9FAFB;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.option:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.option.selected {
+    border: 2px solid #1E90FF;
+    background: #E6F0FA;
+}
+
+.option img {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.lost-text {
+    color: #EF4444;
+    font-weight: 600;
+}
+
+.found-text {
+    color: #10B981;
+    font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    font-size: 0.9rem;
+    color: #2D3748;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #E2E8F0;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    background: #F9FAFB;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #1E90FF;
+    box-shadow: 0 0 0 3px rgba(30, 144, 255, 0.2);
+}
+
+textarea {
+    height: 5rem;
+    resize: none;
+}
+
+.file-upload {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #E2E8F0;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    background: #F9FAFB;
+    transition: border-color 0.3s;
+}
+
+.file-upload:hover {
+    border-color: #1E90FF;
+}
+
+.file-upload input {
+    display: none;
+}
+
+.file-upload span {
+    color: #2D3748;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+button {
+    background: linear-gradient(90deg, #1E90FF, #3B82F6);
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #187BCD, #2563EB);
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+small {
+    color: #6B7280;
+    font-size: 0.85rem;
+    display: block;
+    margin-top: 0.25rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 640px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .content {
+        padding: 1.5rem;
+    }
+
+    .options {
+        grid-template-columns: 1fr;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
