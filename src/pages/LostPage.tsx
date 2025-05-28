@@ -107,9 +107,9 @@ const LostPage: React.FC = () => {
           <div className="text" style={{ fontSize: '16px' }}>
             <strong>{credential.documentType} - {credential.documentId}</strong>
             <p style={{ margin: '5px 0' }}>{credential.description}</p>
-            <small>Byabuze na: {credential.ownerName}</small><br />
-            <small>Aho byabuze: {credential.lostLocation}</small><br />
-            <small>Byabuze ku: {credential.lostDate}</small>
+            <small>Byabuzwe na: {credential.ownerName}</small><br />
+            <small>Aho byaburiye: {credential.lostLocation}</small><br />
+            <small>Byabuze kuwa: {credential.lostDate}</small>
           </div>
         </div>
       ))}
@@ -140,7 +140,7 @@ const LostPage: React.FC = () => {
         padding: '10px 0',
       }}>
         <a href="home" style={{ color: '#444', textDecoration: 'none', fontWeight: 'bold' }}>Urugo</a>
-        <a href="lost" className="active" style={{ color: '#007AFF', textDecoration: 'none', fontWeight: 'bold' }}>Byabuze</a>
+        <a href="lost" className="active" style={{ color: '#007AFF', textDecoration: 'none', fontWeight: 'bold' }}>Ibyabuze</a>
         <a href="found" style={{ color: '#444', textDecoration: 'none', fontWeight: 'bold' }}>Babonetse</a>
         <a href="notifications" style={{ color: '#444', textDecoration: 'none', fontWeight: 'bold' }}>Amatangazo</a>
       </footer>

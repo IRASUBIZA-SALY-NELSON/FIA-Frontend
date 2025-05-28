@@ -139,7 +139,7 @@ const NotificationsPage: React.FC = () => {
         padding: '10px 0',
       }}>
         <a href="/home" style={{ fontWeight: 'bold', textDecoration: 'none' }}>Ahabanza</a>
-        <a href="/lost" style={{ fontWeight: 'bold', textDecoration: 'none' }}>Byabuze</a>
+        <a href="/lost" style={{ fontWeight: 'bold', textDecoration: 'none' }}>Ibyabuze</a>
         <a href="/found" style={{ fontWeight: 'bold', textDecoration: 'none' }}>Babonetse</a>
         <a href="/notifications" className="active" style={{ fontWeight: 'bold', color: '#007AFF', textDecoration: 'none' }}>Amatangazo</a>
       </footer>

@@ -145,7 +145,7 @@ const Home: React.FC = () => {
               fontWeight: 'bold',
             }}
           >
-            Byabuze
+            Ibyabuze
           </button>
           <button
             onClick={() => setSelectedCategory('found')}
@@ -159,7 +159,7 @@ const Home: React.FC = () => {
               fontWeight: 'bold',
             }}
           >
-            Byabonetse
+            Ibyabonetse
           </button>
         </div>
       </div>
@@ -210,11 +210,11 @@ const Home: React.FC = () => {
                     {lostDoc.documentType} - {lostDoc.documentId}
                   </strong>
                   <p style={{ margin: '5px 0' }}>{lostDoc.description}</p>
-                  <small>Byabuze na: {lostDoc.ownerName}</small>
+                  <small>Byabuzwe na: {lostDoc.ownerName}</small>
                   <br />
-                  <small>Aho byabuze: {lostDoc.lostLocation}</small>
+                  <small>Aho byaburiye: {lostDoc.lostLocation}</small>
                   <br />
-                  <small>Byabuze ku: {lostDoc.lostDate}</small>
+                  <small>Byabuze kuwa: {lostDoc.lostDate}</small>
                 </div>
               </div>
             );
@@ -294,7 +294,7 @@ const Home: React.FC = () => {
             navigate('/lost');
           }}
         >
-          Byabuze
+          Ibyabuze
         </a>
         <a
           href="/found"
@@ -304,7 +304,7 @@ const Home: React.FC = () => {
             navigate('/found');
           }}
         >
-          Byabonetse
+          Ibyabonetse
         </a>
         <a
           href="/notifications"

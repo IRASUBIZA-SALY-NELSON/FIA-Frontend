@@ -55,18 +55,18 @@ const LoginPage: React.FC<LoginPageProps> = ({ error, logout, expired }) => {
   };
 
   return (
-    <div style={{
-      fontFamily: "'Roboto', sans-serif",
-      background: 'linear-gradient(135deg, #1E90FF, #60A5FA)',
-      minHeight: '100vh',
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      margin: 0,
-      overflowX: 'hidden',
-      height:'700px',
-      width:'830px'
-    }}>
+<div style={{
+  fontFamily: "'Roboto', sans-serif",
+  background: 'linear-gradient(135deg, #1E90FF, #60A5FA)',
+  minHeight: '100vh',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  margin: 0,
+  overflowX: 'hidden',
+  padding: '1rem' // ✅ add padding for mobile spacing
+}}>
+
       <div className="container" style={{
         maxWidth: '28rem',
         width: '100%',

@@ -16,6 +16,8 @@ import Success from './pages/success';
 import Home from './pages/Home';  
 import UnderDevelopmentPage from './pages/underDevelopmentPage';
 import FoundPage from './pages/found';
+import Contact  from './pages/Contact';
+import Error from './pages/error';
 
 const App: React.FC = () => {
   const [registrationData, setRegistrationData] = useState({
@@ -229,7 +231,8 @@ const App: React.FC = () => {
         <Route path="/notifications" element={<NotificationsPage />} />
         <Route path="/admin/under-development" element={<UnderDevelopmentPage />} />
         <Route path="/user/profile" element={<UserProfileWrapper />} />
-        <Route path="*" element={<div>404 Not Found</div>} />
+        <Route path="*" element={< Error /> } />
+        <Route path="/contact" element={<Contact/>} />
       </Routes>
     </BrowserRouter>
   );
